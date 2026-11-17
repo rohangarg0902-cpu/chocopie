@@ -21,7 +21,7 @@ function MainApp() {
 
   if (!isAuthenticated) {
     if (authView === 'login') {
-      return <Login switchToRegister={() => setAuthView('register')} />;
+      return <Register switchToLogin={() => setAuthView('login')} />;
     }
     return <Register switchToLogin={() => set`View`('login')} />;
   }
